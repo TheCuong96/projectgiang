@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+header input:focus,
+header select:focus,
+header textarea:focus,
+header button:focus {
+  outline: none;
+}
+header div.logo {
+  height: 100%;
+  grid-row: 1 / span 2;
+}
+header div.logo img {
+  float: right;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li:hover {
+  cursor: pointer;
+  color: #307253;
+}
+header nav ul .registration {
+  margin-left: 150px;
+  position: relative;
+}
+header nav ul .registration::after {
+  content: "";
+  height: 10px;
+  border-left: 2px solid black;
+  width: 1px;
+  position: absolute;
+  right: -12px;
+  top: 6px;
+}
+header nav ul .flag {
+  box-sizing: border-box;
+  width: 40px;
+  height: 30px;
+}
+header div.search .search__navbar {
+  display: flex;
+}
+header div.search .search__navbar .search__navbar--item {
+  width: 200px;
+  height: 40px;
+  background-color: #F1F2F2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  color: #808285;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+header div.search .search__navbar .search__navbar--item:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+header div.search .search__input {
+  width: 60%;
+  height: 60px;
+  background-color: #307253;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+}
+header div.search .search__input .search__input--find {
+  background-color: white;
+  display: flex;
+  flex: 1;
+  border-radius: 5px;
+  position: relative;
+  /* For IE10 */
+}
+header div.search .search__input .search__input--find .search__input--find-one {
+  width: 180px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #307253;
+  border: none;
+}
+header div.search .search__input .search__input--find .search__input--find-one option {
+  text-indent: 10px;
+}
+header div.search .search__input .search__input--find select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  padding: 0 10px;
+}
+header div.search .search__input .search__input--find select::-ms-expand {
+  display: none;
+}
+header div.search .search__input .search__input--find-two {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  border-left: 2px solid #ccc;
+  flex: 1;
+}
+header div.search .search__input i {
+  color: white;
+  margin: 8px;
+  font-size: 30px;
+}
+header div.search .search__input i:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .imagebig {
+  max-width: 100%;
+  height: 600px;
+  background-image: url("./img/img1.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+main .mainone {
+  width: 90vw;
+  margin: 5vw;
+  margin-bottom: 5vw;
+}
+main .mainone h2 {
+  display: block;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #307253;
+  margin-bottom: 20px;
+}
+main .mainone .mainone__img {
+  display: flex;
+}
+main .mainone .mainone__img .mainone__img--big {
+  width: 60%;
+  height: 600px;
+}
+main .mainone .mainone__img ul {
+  list-style-type: none;
+  margin-left: 10px;
+}
+main .mainone .mainone__img ul li {
+  height: 150px;
+  overflow: visible;
+}
+main .mainone .mainone__img h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #307253;
+  margin-left: 20px;
+}
+main .maintwo {
+  width: 90vw;
+  margin: 5vw;
+}
+main .maintwo__mark {
+  display: flex;
+  margin-top: 20px;
+}
+main .maintwo__mark .maintwo__mark--one {
+  width: 50%;
+  height: 600px;
+}
+main .maintwo__mark .maintwo__mark--two {
+  width: 50%;
+  overflow: hidden;
+}
+main .maintwo__mark .maintwo__mark--two ul li {
+  width: 100%;
+  height: 50%;
+}
+main .maintwo__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #307253;
+}
+main .maintwo__list .maintwo__list--item {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .maintwo__list .maintwo__list--item img {
+  width: 102%;
+}
+main .maintwo__list .maintwo__list--item li {
+  margin-left: 5px;
+}
+main .maintwo__list .maintwo__list--item li img {
+  margin-left: -5px;
+}
+main .maintwo__list .maintwo__list--item::before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  color: #707070;
+  border: 1px solid;
+  display: block;
+  top: 200px;
+  right: 100%;
+}
+main .mainthree img {
+  width: 100vw;
+  max-width: 100%;
+}
+main .mainfour {
+  width: 90vw;
+  margin: 2vh auto;
+  border-bottom: 3px solid #F2F2F2;
+}
+main .mainfour__title {
+  display: block;
+  font-weight: 600;
+  font-family: Roboto;
+  color: #307253;
+  margin-bottom: 20px;
+}
+main .mainfour__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .mainfour h3 {
+  margin: 4vh;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c2bdbd46;
+}
+
+.mainfive {
+  width: 90vw;
+  color: #307253;
+  font-family: Roboto;
+  font-weight: 500;
+  margin: 2vh auto;
+  display: flex;
+}
+.mainfive .mainfive__one {
+  width: 30vw;
+  padding-right: 10px;
+}
+.mainfive .mainfive__one ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.mainfive .mainfive__one img {
+  width: 100%;
+}
+.mainfive .mainfive__two {
+  width: 30vw;
+  padding: 0 10px;
+}
+.mainfive .mainfive__two h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
+}
+.mainfive .mainfive__two .mainfive__two--one {
+  border-bottom: 2px solid #DCDDDE;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.mainfive .mainfive__three {
+  width: 30vw;
+}
+
+footer {
+  width: 100vw;
+  max-width: 100%;
+  display: block;
+  background-image: url("./img/img13.png");
+  height: 1000px;
+  position: relative;
+}
+footer .lineAll {
+  width: 100vw;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  height: 4vw;
+  background-color: #307253;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .lineAll .lineAll--one {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer .lineAll .lineAll--two {
+  width: 50%;
+  height: 4vw;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2vw solid;
+  border-color: transparent transparent transparent #307253;
+}
+footer .lineAll img {
+  z-index: 1;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+footer .lineAll .lineAll--fb {
+  position: absolute;
+  top: -65%;
+  right: 60%;
+}
+footer .lineAll .lineAll--ytb {
+  position: absolute;
+  top: -65%;
+  right: 51%;
+}
+footer .lineAll .lineAll--sky {
+  position: absolute;
+  top: -65%;
+  right: 42%;
+}
+footer .lineAll .lineAll--fp {
+  position: absolute;
+  top: -65%;
+  right: 33%;
+}
+footer form {
+  color: #307253;
+  position: absolute;
+  right: 12%;
+  font-size: 300%;
+  padding-top: 8vh;
+}
+footer form .form__item {
+  border-bottom: 2px solid #707070;
+  font-weight: 500;
+}
+footer form input {
+  border: none;
+  text-transform: none;
+  outline: none;
+}
+footer form fieldset {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+footer form fieldset textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+footer .info {
+  width: 42vw;
+  position: absolute;
+  left: 10%;
+  top: 42%;
+  color: #307253;
+  margin: 5px 0;
+  font-size: 200%;
+}
+footer .info .info--one {
+  display: block;
+  border-bottom: 3px solid #707070;
+}
+footer .info .info--one div {
+  margin: 5px 0;
+}
+footer .info .info--two {
+  display: block;
+}
+footer .info .info--two div {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
